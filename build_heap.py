@@ -10,7 +10,7 @@ def build_heap(data):
         sort_heap(data, i, n)
     return swaps
 
-def sort_heap(data, i, n):
+def sort_heap(data, i, swaps):
     lChild = 2 * i
     rChild = 2 * i + 1
     mz = i
@@ -20,7 +20,7 @@ def sort_heap(data, i, n):
         mz = rChild
     if i != mz:
         swaps.append((i, mz))
-        sort_heap(data, mz, n)
+        sort_heap(data, mz, swaps)
 
 def main():
     
