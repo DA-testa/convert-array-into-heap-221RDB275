@@ -39,7 +39,7 @@ def main():
     elif input_type == "F":
         file_name = input()
         path = "./test/" + file_name
-        with open(path, 'r', encoding = 'utf-8') as test
+        with open(path, 'r', encoding = 'utf-8') as test:
             n = int(test.readline())
             data = list(map(int, test.readline().split()))
             assert len(data) == n
