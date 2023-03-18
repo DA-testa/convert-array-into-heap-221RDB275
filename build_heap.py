@@ -11,6 +11,7 @@ def build_heap(data):
     return swaps
 
 def sort_heap(data, i, swaps):
+    n = len(data)
     lChild = 2 * i
     rChild = 2 * i + 1
     mz = i
