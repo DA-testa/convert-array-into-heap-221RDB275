@@ -33,13 +33,13 @@ def main():
 
     # input from keyboard
     input_type = input()
-    if input_type == "I":
+    if input_type[0] == "I":
         n = int(input())
         data = list(map(int, input().split()))
         assert len(data) == n
     # checks if lenght of data is the same as the said lenght
         
-    elif input_type == "F":
+    elif input_type[0] == "F":
         file_name = input()
         path = "./tests/" + file_name
         with open(path, 'r', encoding = 'utf-8') as test:
