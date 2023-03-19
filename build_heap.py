@@ -55,12 +55,12 @@ def main():
 
     # TODO: output how many swaps were made, 
     # this number should be less than 4n (less than 4*len(data))
-    if len(data) <= 4 * len(data):
+ 
 
     # output all swaps
-        print(len(swaps))
-        for i, j in swaps:
-            print(i, j)
+    print(len(swaps))
+    for i, j in swaps:
+        print(i, j)
 
 
 if __name__ == "__main__":
