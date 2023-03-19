@@ -15,9 +15,9 @@ def sort_heap(data, i, swaps):
     lChild = 2 * i + 1
     rChild = 2 * i + 2
     mz = i
-    if lChild < n:
+    if lChild < n and data[lChild] < data[mz]:
         mz = lChild
-    if rChild < n:
+    if rChild < n and data[rChild] < data[mz]:
         mz = rChild
     if i != mz:
         swaps.append((i, mz))
